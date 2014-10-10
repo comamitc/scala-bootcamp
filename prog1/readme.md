@@ -1,4 +1,4 @@
-# prog1
+# prog1 - paren matching
 
 In this exercise we are going to complete a function that will tell us if we have balanced parens in a string.  We wil create an `object` called Parens that will have one function `isBalanced(s: String)`.  Additional functions and values are allowed to help calculate the result.
 
