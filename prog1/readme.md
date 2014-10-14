@@ -1,19 +1,12 @@
-# prog1 - paren matching
+# prog1 - Fibonacci function
 
-In this exercise we are going to complete a function that will tell us if we have balanced parens in a string.  We wil create an `object` called Parens that will have one function `isBalanced(s: String)`.  Additional functions and values are allowed to help calculate the result.
+By definition, the first two numbers in the Fibonacci sequence are 1 and 1, or 0 and 1, depending on the chosen starting point of the sequence, and each subsequent number is the sum of the previous two.
 
-## test strings
+`Fn = F{n-1} + F{n-2}`
 
-```scala
-  val paren1 = "("        // false
-  val paren2 = "))(("      // false
-  val paren3 = "(())"     // true
-  val paren4 = "(()(())"  // false
-```
+# hints
 
-Test your solution with the `sbt test` command
+- Let's only accept `Int` for simplicity
+- Grasp of syntax is more valueable that performance optimisation
+- The scala compiler tries to detect tail recursion and _automagically_ optimizes on compilation.
 
-## hints
-
-- There is a datatype in scala called `Char` for characters
-- There is a method on a `String` that can be called `String.toList` that will result in `List[Char]`.
